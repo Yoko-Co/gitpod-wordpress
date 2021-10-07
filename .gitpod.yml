@@ -14,7 +14,7 @@ ports:
     onOpen: ignore
 
 tasks:
-  - init: gp await-port 3306 && wp-setup-plugin # or wp-setup-theme
+  - init: gp await-port 3306 && wp-setup-theme # or wp-setup-plugin
     command: apache2ctl start # start Apache server
   
   # start MailHog (SMTP testing tool) 
